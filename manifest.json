@@ -1,0 +1,21 @@
+{
+  "image_name": "cyberdojofoundation/go_testify:3f62bba",
+  "display_name": "Go, testify",
+  "filename_extension": [
+    ".go"
+  ],
+  "max_seconds": 15,
+  "tab_size": 4,
+  "exercise": "Word Wrap",
+  "version": 2,
+  "created": [
+    2024,
+    6,
+    20,
+    8,
+    36,
+    42,
+    290562
+  ],
+  "id": "SYsZSY"
+}
