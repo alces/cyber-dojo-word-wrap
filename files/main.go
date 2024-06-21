@@ -18,6 +18,7 @@ func wrapParagraph(text string, width int) (result string) {
     }
     
     line := ""
+    
     for _, word := range strings.Split(text, " ") {                
         if line != "" {
             if len(line) + len(word) + 1 < width {
@@ -27,8 +28,10 @@ func wrapParagraph(text string, width int) (result string) {
                 line = ""   
             }
         }
+        
         line += word
     }
+    
     result += line
     
     return
