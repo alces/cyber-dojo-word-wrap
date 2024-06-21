@@ -19,15 +19,13 @@ func wrapParagraph(text string, width int) (result string) {
     
     line := ""
     for _, word := range strings.Split(text, " ") {                
-        if len(line) + len(word) + 1 < width {
-            if line != "" {
-                line += " "
-            }                   
-        } else {
-            if line != "" {
+        if line != "" {
+            if len(line) + len(word) + 1 < width {
+                line += " "                  
+            } else {
                 result += line + "\n"
-                line = ""
-            }    
+                line = ""   
+            }
         }
         line += word
     }
