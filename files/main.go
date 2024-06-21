@@ -24,8 +24,10 @@ func wrapParagraph(text string, width int) (result string) {
                 line += " "
             }                   
         } else {
-            result += line + "\n"
-            line = ""
+            if line != "" {
+                result += line + "\n"
+                line = ""
+            }    
         }
         line += word
     }
