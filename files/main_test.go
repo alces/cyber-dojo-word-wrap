@@ -44,6 +44,7 @@ var wrapParagraphResults = []struct {
     expected string
 } {
     {"abc", 5, "abc"},
+    {"That shows thee a weak slave", 10, "That shows\nthee a\nweak slave"},
 }
 
 func TestWrapParagraph(t *testing.T) {
