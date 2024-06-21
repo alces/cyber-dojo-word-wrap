@@ -31,7 +31,8 @@ their men.
 SAMPSON 'Tis all one. I will show myself a
 tyrant. When I have fought with the men, I will
 be civil with the maids; I will cut off their
-heads.`
+heads.
+`
 
 func TestWordWrap(t *testing.T) {
     assert.Equal(t, wrapped50Text, Wrap(unwrappedText, 50))
