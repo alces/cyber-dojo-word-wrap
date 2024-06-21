@@ -37,3 +37,7 @@ heads.
 func TestWordWrap(t *testing.T) {
     assert.Equal(t, wrapped50Text, Wrap(unwrappedText, 50))
 }
+
+func TestWrapParagraph(t *testing.T) {
+    assert.Equal(t, "abc", wrapParagraph("abc", 5))
+}

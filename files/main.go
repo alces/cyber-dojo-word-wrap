@@ -27,3 +27,7 @@ func Wrap(text string, width int) (result string) {
     
     return
 }
+
+func wrapParagraph(text string, width int) (result string) {
+    return
+}
