@@ -14,12 +14,12 @@ func Wrap(text string, width int) (result string) {
                 if len(line) + len(w) + 1 < width {
                     if line != "" {
                         line += " "
-                    }
-                    line += w
+                    }                   
                 } else {
                     result += line + "\n"
-                    line = w
+                    line = ""
                 }
+                line += w
             }
             result += line + "\n"
         }    
