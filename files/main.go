@@ -11,7 +11,7 @@ func Wrap(text string, width int) (result string) {
         } else {
             line := ""
             for _, w := range strings.Split(p, " ") {                
-                if len(line) + len(w) + 1 <= width {
+                if len(line) + len(w) + 1 < width {
                     if line != "" {
                         line += " "
                     }
