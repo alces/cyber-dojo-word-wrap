@@ -32,4 +32,4 @@
         	Test:       	TestWordWrap
 FAIL
 exit status 1
-FAIL	_/sandbox	0.007s
+FAIL	_/sandbox	0.002s
