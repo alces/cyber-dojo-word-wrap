@@ -13,7 +13,7 @@ SAMPSON 'Tis true, and therefore women, being the weaker vessels, are ever thrus
 GREGORY The quarrel is between our masters and us their men.
 SAMPSON 'Tis all one. I will show myself a tyrant. When I have fought with the men, I will be civil with the maids; I will cut off their heads.`
 
-var wrapped50Test = `SAMPSON A dog of the house of Montague moves me.
+var wrapped50Text = `SAMPSON A dog of the house of Montague moves me.
 GREGORY To move is to stir, and to be valiant is
 to stand. Therefore if thou art moved thou
 runn'st away.
