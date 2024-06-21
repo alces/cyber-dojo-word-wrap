@@ -20,7 +20,8 @@ func Wrap(text string, width int) (result string) {
                     result += line +"\n"
                     line = w
                 }
-            }    
+            }
+            result += line
         }    
     }    
     
