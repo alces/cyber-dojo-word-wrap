@@ -47,6 +47,7 @@ var addWordResults = []struct {
     expectedLine string
 } {
     {"", "", "abc", 5, "", "abc"},
+    {"", "abc", "xyz", 10, "", "abc xyz"},
 }
 
 func TestAddWord(t *testing.T) {
