@@ -11,5 +11,21 @@
       42,
       290562
     ]
+  },
+  {
+    "duration": 4.75373,
+    "colour": "amber",
+    "predicted": "red",
+    "revert_if_wrong": "off",
+    "index": 1,
+    "time": [
+      2024,
+      6,
+      21,
+      7,
+      28,
+      46,
+      474774
+    ]
   }
 ]

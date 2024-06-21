@@ -1,5 +1,5 @@
-package hiker
+package word
 
-func answer() int {
-    return 6 * 9
+func Wrap(text string, width int) (result string) {
+    return
 }
