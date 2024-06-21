@@ -29,5 +29,9 @@ func Wrap(text string, width int) (result string) {
 }
 
 func wrapParagraph(text string, width int) (result string) {
+    if len(text) <= width {
+        return text
+    }
+    
     return
 }
