@@ -21,10 +21,8 @@ func addWord(text, line, word string, width int) (string, string) {
             line = ""   
         }
     }
-
-    line += word
     
-    return text, line
+    return text, line + word
 }
 
 func wrapParagraph(text string, width int) (result string) {
