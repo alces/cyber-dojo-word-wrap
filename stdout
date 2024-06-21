@@ -3,12 +3,12 @@
         	Error Trace:	main_test.go:37
         	Error:      	Not equal: 
         	            	expected: "SAMPSON A dog of the house of Montague moves me.\nGREGORY To move is to stir, and to be valiant is\nto stand. Therefore if thou art moved thou\nrunn'st away.\nSAMPSON A dog of that house shall move me to\nstand. I will take the wall of any man or maid of\nMontague's.\nGREGORY That shows thee a weak slave, for the\nweakest goes to the wall.\nSAMPSON 'Tis true, and therefore women, being the\nweaker vessels, are ever thrust to the wall.\nTherefore I will push Montague's men from the\nwall and thrust his maids to the wall.\nGREGORY The quarrel is between our masters and us\ntheir men.\nSAMPSON 'Tis all one. I will show myself a\ntyrant. When I have fought with the men, I will\nbe civil with the maids; I will cut off their\nheads."
-        	            	actual  : "SAMPSON A dog of the house of Montague moves me.\n"
+        	            	actual  : "SAMPSON A dog of the house of Montague moves me.\nGREGORYTomoveistostir,andtobevaliantis\ntostand.Thereforeifthouartmovedthourunn'st\naway.SAMPSONAdogofthathouseshallmovemeto\nstand.Iwilltakethewallofanymanormaidof\nMontague's.GREGORYThatshowstheeaweakslave,forthe\nweakestgoestothewall.SAMPSON'Tistrue,andthereforewomen,beingthe\nweakervessels,areeverthrusttothewall.ThereforeI\nwillpushMontague'smenfromthewallandthrusthis\nmaidstothewall.GREGORYThequarrelisbetweenourmastersandus\ntheirmen.SAMPSON'Tisallone.Iwillshowmyselfa\ntyrant.WhenIhavefoughtwiththemen,Iwillbecivil\nwiththemaids;Iwillcutofftheirheads."
         	            	
         	            	Diff:
         	            	--- Expected
         	            	+++ Actual
-        	            	@@ -1,19 +1,2 @@
+        	            	@@ -1,19 +1,13 @@
         	            	 SAMPSON A dog of the house of Montague moves me.
         	            	-GREGORY To move is to stir, and to be valiant is
         	            	-to stand. Therefore if thou art moved thou
@@ -28,8 +28,19 @@
         	            	-tyrant. When I have fought with the men, I will
         	            	-be civil with the maids; I will cut off their
         	            	-heads.
-        	            	+
+        	            	+GREGORYTomoveistostir,andtobevaliantis
+        	            	+tostand.Thereforeifthouartmovedthourunn'st
+        	            	+away.SAMPSONAdogofthathouseshallmovemeto
+        	            	+stand.Iwilltakethewallofanymanormaidof
+        	            	+Montague's.GREGORYThatshowstheeaweakslave,forthe
+        	            	+weakestgoestothewall.SAMPSON'Tistrue,andthereforewomen,beingthe
+        	            	+weakervessels,areeverthrusttothewall.ThereforeI
+        	            	+willpushMontague'smenfromthewallandthrusthis
+        	            	+maidstothewall.GREGORYThequarrelisbetweenourmastersandus
+        	            	+theirmen.SAMPSON'Tisallone.Iwillshowmyselfa
+        	            	+tyrant.WhenIhavefoughtwiththemen,Iwillbecivil
+        	            	+withthemaids;Iwillcutofftheirheads.
         	Test:       	TestWordWrap
 FAIL
 exit status 1
-FAIL	_/sandbox	0.002s
+FAIL	_/sandbox	0.008s
