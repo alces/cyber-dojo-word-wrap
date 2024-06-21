@@ -5,24 +5,8 @@ import (
 )
 
 func Wrap(text string, width int) (result string) {
-    for _, paragraph := range strings.Split(text, "\n") {
-        if len(paragraph) <= width {
-            result += paragraph + "\n"
-        } else {
-            line := ""
-            for _, word := range strings.Split(paragraph, " ") {                
-                if len(line) + len(word) + 1 < width {
-                    if line != "" {
-                        line += " "
-                    }                   
-                } else {
-                    result += line + "\n"
-                    line = ""
-                }
-                line += word
-            }
-            result += line + "\n"
-        }    
+    for _, p := range strings.Split(text, "\n") {
+        result += wrapParagraph(p, width) + "\n"
     }    
     
     return
