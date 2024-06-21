@@ -17,11 +17,11 @@ func Wrap(text string, width int) (result string) {
                     }
                     line += w
                 } else {
-                    result += line +"\n"
+                    result += line + "\n"
                     line = w
                 }
             }
-            result += line
+            result += line + "\n"
         }    
     }    
     
