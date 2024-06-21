@@ -1,2 +1,17 @@
-PASS
-ok  	_/sandbox	0.007s
+--- FAIL: TestWrapParagraph (0.00s)
+    main_test.go:53: 
+        	Error Trace:	main_test.go:53
+        	Error:      	Not equal: 
+        	            	expected: "abcdefgh"
+        	            	actual  : "\nabcdefgh"
+        	            	
+        	            	Diff:
+        	            	--- Expected
+        	            	+++ Actual
+        	            	@@ -1 +1,2 @@
+        	            	+
+        	            	 abcdefgh
+        	Test:       	TestWrapParagraph
+FAIL
+exit status 1
+FAIL	_/sandbox	0.003s

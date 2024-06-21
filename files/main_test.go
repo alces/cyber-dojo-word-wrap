@@ -44,6 +44,7 @@ var wrapParagraphResults = []struct {
     expected string
 } {
     {"abc", 5, "abc"},
+    {"abcdefgh", 5, "abcdefgh"},
     {"That shows thee a weak slave", 11, "That shows\nthee a\nweak slave"},
 }
 
