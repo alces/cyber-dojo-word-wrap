@@ -13,7 +13,18 @@ func Wrap(text string, width int) (result string) {
 }
 
 func addWord(text, line, word string, width int) (string, string) {
-    return "", ""
+    if line != "" {
+        if len(line) + len(word) + 1 < width {
+            line += " "                  
+        } else {
+            text += line + "\n"
+            line = ""   
+        }
+    }
+
+    line += word
+    
+    return text, line
 }
 
 func wrapParagraph(text string, width int) (result string) {
