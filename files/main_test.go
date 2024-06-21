@@ -38,6 +38,16 @@ func TestWordWrap(t *testing.T) {
     assert.Equal(t, wrapped50Text, Wrap(unwrappedText, 50))
 }
 
+var wrapParagraphResults = []struct {
+    text     string
+    width    int
+    expected string
+} {
+    {"abc", 5, "abc"},
+}
+
 func TestWrapParagraph(t *testing.T) {
-    assert.Equal(t, "abc", wrapParagraph("abc", 5))
+    for _, r := range wrapParagraphResults {
+        assert.Equal(t, r.expected, wrapParagraph(r.text, r.width))
+    }
 }
