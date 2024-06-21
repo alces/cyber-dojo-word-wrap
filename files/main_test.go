@@ -48,6 +48,7 @@ var addWordResults = []struct {
 } {
     {"", "", "abc", 5, "", "abc"},
     {"", "abc", "xyz", 10, "", "abc xyz"},
+    {"", "abc xyz", "qwe", 7, "abc xyz\n", "qwe"},
 }
 
 func TestAddWord(t *testing.T) {
