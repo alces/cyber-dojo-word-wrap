@@ -9,15 +9,16 @@ func Wrap(text string, width int) (result string) {
         if len(p) <= width {
             result += p + "\n"
         } else {
-            ls := 0
-            for _, w := range strings.Split(p, " ") {
-                ws := len(w) + 1
-                if ls + ws <= width {
-                    result += " " + w
-                    ls += ws
+            line := ""
+            for _, w := range strings.Split(p, " ") {                
+                if len(line) + len(w) + 1 <= width {
+                    if line != "" {
+                        line += " "
+                    }
+                    line += w
                 } else {
-                    result += "\n" + w
-                    ls = 0
+                    result += line +"\n"
+                    line = w
                 }
             }    
         }    
