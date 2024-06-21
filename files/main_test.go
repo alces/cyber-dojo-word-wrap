@@ -38,6 +38,12 @@ func TestWordWrap(t *testing.T) {
     assert.Equal(t, wrapped50Text, Wrap(unwrappedText, 50))
 }
 
+func TestAddWord(t *testing.T) {
+    text, line := addWord("", "", "abc", 5)
+    assert.Equal(t, "", text, "Unexpected text")
+    assert.Equal(t, "abc", line, "Unexpected line")
+}
+
 var wrapParagraphResults = []struct {
     text     string
     width    int
