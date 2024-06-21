@@ -3,19 +3,13 @@
         	Error Trace:	main_test.go:52
         	Error:      	Not equal: 
         	            	expected: "That shows\nthee a\nweak slave"
-        	            	actual  : "That\nshows\nthee a\nweak\nslave\n"
+        	            	actual  : "That shows\nthee a\nweak slave\n"
         	            	
         	            	Diff:
         	            	--- Expected
         	            	+++ Actual
-        	            	@@ -1,3 +1,6 @@
-        	            	-That shows
-        	            	+That
-        	            	+shows
-        	            	 thee a
-        	            	-weak slave
-        	            	+weak
-        	            	+slave
+        	            	@@ -3 +3,2 @@
+        	            	 weak slave
         	            	+
         	Test:       	TestWrapParagraph
 FAIL
