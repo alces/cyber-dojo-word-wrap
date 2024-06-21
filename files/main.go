@@ -45,7 +45,7 @@ func wrapParagraph(text string, width int) (result string) {
         }
         line += word
     }
-    result += line + "\n"
+    result += line
     
     return
 }

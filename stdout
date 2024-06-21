@@ -1,17 +1,2 @@
---- FAIL: TestWrapParagraph (0.00s)
-    main_test.go:52: 
-        	Error Trace:	main_test.go:52
-        	Error:      	Not equal: 
-        	            	expected: "That shows\nthee a\nweak slave"
-        	            	actual  : "That shows\nthee a\nweak slave\n"
-        	            	
-        	            	Diff:
-        	            	--- Expected
-        	            	+++ Actual
-        	            	@@ -3 +3,2 @@
-        	            	 weak slave
-        	            	+
-        	Test:       	TestWrapParagraph
-FAIL
-exit status 1
-FAIL	_/sandbox	0.002s
+PASS
+ok  	_/sandbox	0.007s
