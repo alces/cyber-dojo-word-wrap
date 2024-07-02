@@ -71,6 +71,10 @@ var wrapParagraphResults = []struct {
 
 func TestWrapParagraph(t *testing.T) {
     for _, r := range wrapParagraphResults {
-        assert.Equal(t, r.expected, wrapParagraph(r.text, r.width))
+        w := wrapper{
+            width: r.width,
+        }
+        
+        assert.Equal(t, r.expected, w.wrapParagraph(r.text))
     }
 }
