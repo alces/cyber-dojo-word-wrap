@@ -53,7 +53,11 @@ var addWordResults = []struct {
 
 func TestAddWord(t *testing.T) {
     for _, r := range addWordResults {
-        text, line := addWord(r.text, r.line, r.word, r.width)
+        w := wrapper{
+            width: r.width,
+        }
+        
+        text, line := w.addWord(r.text, r.line, r.word, r.width)
         assert.Equal(t, r.expectedText, text, "Unexpected text")
         assert.Equal(t, r.expectedLine, line, "Unexpected line")
     }

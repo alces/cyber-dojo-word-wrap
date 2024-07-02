@@ -20,9 +20,9 @@ func Wrap(text string, width int) (result string) {
     return
 }
 
-func addWord(text, line, word string, width int) (string, string) {
+func (w *wrapper) addWord(text, line, word string) (string, string) {
     if line != "" {
-        if len(line) + len(word) + 1 < width {
+        if len(line) + len(word) + 1 < w.width {
             line += " "                  
         } else {
             text += line + "\n"
@@ -41,7 +41,7 @@ func (w *wrapper) wrapParagraph(text string) (result string) {
     line := ""
     
     for _, word := range strings.Split(text, " ") {                
-        result, line = addWord(result, line, word, w.width)
+        result, line = w.addWord(result, line, word)
     }
     
     result += line
