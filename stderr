@@ -1,4 +1,0 @@
-# _/sandbox [_/sandbox.test]
-./main_test.go:60:57: too many arguments in call to w.addWord
-	have (string, string, string, int)
-	want (string, string, string)

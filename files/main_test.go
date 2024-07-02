@@ -57,7 +57,7 @@ func TestAddWord(t *testing.T) {
             width: r.width,
         }
         
-        text, line := w.addWord(r.text, r.line, r.word, r.width)
+        text, line := w.addWord(r.text, r.line, r.word)
         assert.Equal(t, r.expectedText, text, "Unexpected text")
         assert.Equal(t, r.expectedLine, line, "Unexpected line")
     }
