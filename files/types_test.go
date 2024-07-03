@@ -20,7 +20,7 @@ func TestNewWrapper(t *testing.T) {
     assert.Equal(t, 5, w.width)
 }
 
-var wrapParagraphResults = []struct {
+var paragraphWrapResults = []struct {
     text     string
     width    int
     expected string
@@ -30,8 +30,8 @@ var wrapParagraphResults = []struct {
     {"That shows thee a weak slave", 11, "That shows\nthee a\nweak slave"},
 }
 
-func TestWrapParagraph(t *testing.T) {
-    for _, r := range wrapParagraphResults {
+func TestParagraphWrap(t *testing.T) {
+    for _, r := range paragraphWrapResults {
         p := newWrapper(r.width).newParagraph(r.text)
         
         assert.Equal(t, r.expected, p.wrap())

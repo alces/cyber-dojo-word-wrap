@@ -1,5 +1,0 @@
-# _/sandbox [_/sandbox.test]
-./types_test.go:23:5: wrapParagraphResults redeclared in this block
-	./main_test.go:64:5: other declaration of wrapParagraphResults
-./types_test.go:33:6: TestWrapParagraph redeclared in this block
-	./main_test.go:74:6: other declaration of TestWrapParagraph
