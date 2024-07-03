@@ -1,5 +1,9 @@
 package word
 
+import (
+    "strings"
+)
+
 type wrapper struct {
     width int
 }
