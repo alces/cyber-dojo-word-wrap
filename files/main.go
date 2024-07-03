@@ -5,9 +5,7 @@ import (
 )
 
 func Wrap(text string, width int) (result string) {
-    w := wrapper{
-        width: width,
-    }
+    w := newWrapper(width)
     
     for _, p := range strings.Split(text, "\n") {
         result += w.wrapParagraph(p) + "\n"
