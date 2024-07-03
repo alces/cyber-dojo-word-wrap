@@ -1,2 +1,8 @@
-PASS
-ok  	_/sandbox	0.010s
+--- FAIL: TestNewWrapper (0.00s)
+    types_test.go:9: 
+        	Error Trace:	types_test.go:9
+        	Error:      	Expected value not to be nil.
+        	Test:       	TestNewWrapper
+FAIL
+exit status 1
+FAIL	_/sandbox	0.004s

@@ -4,10 +4,6 @@ import (
     "strings"
 )
 
-type wrapper struct {
-    width int
-}
-
 func Wrap(text string, width int) (result string) {
     w := wrapper{
         width: width,
