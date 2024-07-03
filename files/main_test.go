@@ -60,21 +60,3 @@ func TestAddWord(t *testing.T) {
         assert.Equal(t, r.expectedLine, line, "Unexpected line")
     }
 }
-
-var wrapParagraphResults = []struct {
-    text     string
-    width    int
-    expected string
-} {
-    {"abc", 5, "abc"},
-    {"abcdefgh", 5, "abcdefgh"},
-    {"That shows thee a weak slave", 11, "That shows\nthee a\nweak slave"},
-}
-
-func TestWrapParagraph(t *testing.T) {
-    for _, r := range wrapParagraphResults {
-        w := newWrapper(r.width)
-        
-        assert.Equal(t, r.expected, w.wrapParagraph(r.text))
-    }
-}

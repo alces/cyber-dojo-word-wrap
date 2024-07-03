@@ -26,19 +26,3 @@ func (w *wrapper) addWord(text, line, word string) (string, string) {
     
     return text, line + word
 }
-
-func (w *wrapper) wrapParagraph(text string) (result string) {
-    if len(text) <= w.width {
-        return text
-    }
-    
-    line := ""
-    
-    for _, word := range strings.Split(text, " ") {                
-        result, line = w.addWord(result, line, word)
-    }
-    
-    result += line
-    
-    return
-}
