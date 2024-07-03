@@ -23,5 +23,17 @@ func (w *wrapper) newParagraph(text string) *paragraph {
 }
 
 func (p *paragraph) wrap() (result string) {
+    if len(p.text) <= p.width {
+        return p.text
+    }
+    
+    line := ""
+    
+    for _, word := range strings.Split(p.text, " ") {                
+        result, line = w.addWord(result, line, word)
+    }
+    
+    result += line
+    
     return
 }

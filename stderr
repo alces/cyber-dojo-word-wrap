@@ -1,0 +1,3 @@
+# _/sandbox [_/sandbox.test]
+./types.go:32:26: undefined: strings
+./types.go:33:24: undefined: w
