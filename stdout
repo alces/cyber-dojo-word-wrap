@@ -1,8 +1,1 @@
---- FAIL: TestNewParagraph (0.00s)
-    types_test.go:9: 
-        	Error Trace:	types_test.go:9
-        	Error:      	Expected value not to be nil.
-        	Test:       	TestNewParagraph
-FAIL
-exit status 1
-FAIL	_/sandbox	0.020s
+FAIL	_/sandbox [build failed]

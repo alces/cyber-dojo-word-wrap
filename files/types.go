@@ -10,7 +10,10 @@ type paragraph struct {
 }
 
 func (w *wrapper) newParagraph(text string) *paragraph {
-    return nil
+    return &paragraph{
+        wrapper: w,
+        text:    text,
+    }
 }
 
 func newWrapper(width int) *wrapper {

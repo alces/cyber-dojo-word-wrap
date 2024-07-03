@@ -1,0 +1,2 @@
+# _/sandbox [_/sandbox.test]
+./types.go:14:18: cannot use w (variable of type *wrapper) as type wrapper in struct literal
