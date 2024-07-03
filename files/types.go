@@ -22,6 +22,6 @@ func (w *wrapper) newParagraph(text string) *paragraph {
     }
 }
 
-func (p *paragraph) wrap() result string {
+func (p *paragraph) wrap() (result string) {
     return
 }
