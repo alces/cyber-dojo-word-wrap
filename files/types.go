@@ -4,6 +4,8 @@ type wrapper struct {
     width int
 }
 
-func newWrapper() *wrapper {
-    return nil
+func newWrapper(width int) *wrapper {
+    return &wrapper{
+        width: width,
+    }
 }

@@ -6,5 +6,5 @@ import (
 )
 
 func TestNewWrapper(t *testing.T) {
-    assert.NotNil(t, newWrapper())
+    assert.NotNil(t, newWrapper(5))
 }
