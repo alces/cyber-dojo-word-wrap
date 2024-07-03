@@ -6,7 +6,10 @@ import (
 )
 
 func TestNewParagraph(t *testing.T) {
-    assert.NotNil(t, newWrapper(10).newParagraph("test"))
+    p := newWrapper(10).newParagraph("test")
+    
+    assert.NotNil(t, p)
+    assert.Equal(t, "test", p.text)
 }
 
 func TestNewWrapper(t *testing.T) {
