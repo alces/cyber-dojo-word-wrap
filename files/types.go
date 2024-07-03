@@ -11,7 +11,7 @@ type paragraph struct {
 
 func (w *wrapper) newParagraph(text string) *paragraph {
     return &paragraph{
-        wrapper: w,
+        wrapper: *w,
         text:    text,
     }
 }
