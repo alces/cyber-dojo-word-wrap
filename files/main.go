@@ -14,15 +14,4 @@ func Wrap(text string, width int) (result string) {
     return
 }
 
-func (w *wrapper) addWord(text, line, word string) (string, string) {
-    if line != "" {
-        if len(line) + len(word) + 1 < w.width {
-            line += " "                  
-        } else {
-            text += line + "\n"
-            line = ""   
-        }
-    }
-    
-    return text, line + word
-}
+

@@ -19,6 +19,19 @@ func newWrapper(width int) *wrapper {
     }
 }
 
+func (w *wrapper) addWord(text, line, word string) (string, string) {
+    if line != "" {
+        if len(line) + len(word) + 1 < w.width {
+            line += " "                  
+        } else {
+            text += line + "\n"
+            line = ""   
+        }
+    }
+    
+    return text, line + word
+}
+
 func (w *wrapper) newParagraph(text string) *paragraph {
     return &paragraph{
         wrapper: *w,

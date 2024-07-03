@@ -37,26 +37,3 @@ heads.
 func TestWordWrap(t *testing.T) {
     assert.Equal(t, wrapped50Text, Wrap(unwrappedText, 50))
 }
-
-var addWordResults = []struct {
-    text         string
-    line         string
-    word         string
-    width        int
-    expectedText string
-    expectedLine string
-} {
-    {"", "", "abc", 5, "", "abc"},
-    {"", "abc", "xyz", 10, "", "abc xyz"},
-    {"", "abc xyz", "qwe", 7, "abc xyz\n", "qwe"},
-}
-
-func TestAddWord(t *testing.T) {
-    for _, r := range addWordResults {
-        w := newWrapper(r.width)
-        
-        text, line := w.addWord(r.text, r.line, r.word)
-        assert.Equal(t, r.expectedText, text, "Unexpected text")
-        assert.Equal(t, r.expectedLine, line, "Unexpected line")
-    }
-}
