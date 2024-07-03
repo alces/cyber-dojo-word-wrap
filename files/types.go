@@ -30,7 +30,7 @@ func (p *paragraph) wrap() (result string) {
     line := ""
     
     for _, word := range strings.Split(p.text, " ") {                
-        result, line = w.addWord(result, line, word)
+        result, line = p.addWord(result, line, word)
     }
     
     result += line
