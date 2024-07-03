@@ -9,6 +9,12 @@ type paragraph struct {
     text string
 }
 
+func newWrapper(width int) *wrapper {
+    return &wrapper{
+        width: width,
+    }
+}
+
 func (w *wrapper) newParagraph(text string) *paragraph {
     return &paragraph{
         wrapper: *w,
@@ -16,8 +22,6 @@ func (w *wrapper) newParagraph(text string) *paragraph {
     }
 }
 
-func newWrapper(width int) *wrapper {
-    return &wrapper{
-        width: width,
-    }
+func (p *paragraph) wrap() result string {
+    return
 }

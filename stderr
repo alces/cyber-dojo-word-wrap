@@ -1,0 +1,2 @@
+# _/sandbox [_/sandbox.test]
+./types.go:25:35: syntax error: unexpected string after top level declaration

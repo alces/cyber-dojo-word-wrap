@@ -1,2 +1,1 @@
-PASS
-ok  	_/sandbox	0.015s
+FAIL	_/sandbox [build failed]
