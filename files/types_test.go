@@ -10,6 +10,7 @@ func TestNewParagraph(t *testing.T) {
     
     assert.NotNil(t, p)
     assert.Equal(t, "test", p.text)
+    assert.Equal(t, 10, p.width)
 }
 
 func TestNewWrapper(t *testing.T) {
